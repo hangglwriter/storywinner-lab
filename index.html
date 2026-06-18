@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>스토리위너 기획실</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+  <style>
+    :root {
+      --base-font-size: 15px;
+      --theme-color: #E8734A;        /* 스토리위너 코랄 */
+      --sidebar-bg: #FFF3E8;          /* 웜 서브 */
+    }
+    body, .markdown-section {
+      font-family: 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
+    }
+    .sidebar { background-color: var(--sidebar-bg); }
+    .sidebar-nav li a { font-size: 14px; }
+    .app-name-link { font-weight: 800; font-size: 18px !important; color: #2D2A26 !important; }
+    .markdown-section table { display: table; width: 100%; }
+    .markdown-section a { color: #E8734A; text-decoration: underline; }
+    .markdown-section h1, .markdown-section h2 { color: #2D2A26; }
+    .markdown-section h2 {
+      border-bottom: 2px solid #F5B041; padding-bottom: 6px; margin-top: 2.2rem;
+    }
+    .app-nav { margin-top: 10px; }
+    .app-nav li a { font-size: 15px; font-weight: 600; }
+    .app-nav li.active > a { color: #E8734A; border-bottom: 2px solid #E8734A; }
+    /* 상태 뱃지 (pipeline 표에서 사용) */
+    .markdown-section td { vertical-align: top; }
+    blockquote {
+      border-left: 4px solid #F5B041 !important; background: #FFF8F0; border-radius: 0 6px 6px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">로딩 중...</div>
+  <script>
+    window.$docsify = {
+      name: '📚 스토리위너 기획실',
+      homepage: 'home.md',
+      loadSidebar: true,
+      loadNavbar: true,
+      subMaxLevel: 0,
+      sidebarDisplayLevel: 1,
+      search: {
+        placeholder: '전체 검색 (브런치·유튜브·키워드·벤치 다 검색)...',
+        noData: '결과 없음',
+        depth: 4
+      },
+      auto2top: true,
+      basePath: './',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md'
+      },
+      plugins: [
+        function openLinksInNewTab(hook) {
+          hook.doneEach(function () {
+            document.querySelectorAll('.markdown-section a:not([target])').forEach(function (a) {
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener noreferrer');
+            });
+          });
+        }
+      ]
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/front-matter.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="memo.js?v=1"></script>
+</body>
+</html>

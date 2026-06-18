@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+*.tmp
+notes/.token-test-*.tmp
+tmp/
+__pycache__/
