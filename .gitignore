@@ -4,3 +4,5 @@ node_modules/
 notes/.token-test-*.tmp
 tmp/
 __pycache__/
+
+.vercel
