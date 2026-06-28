@@ -2,4 +2,5 @@
 * [📡 레이더](/radar/)
 * [📋 파이프라인](/pipeline/)
 * [🔍 벤치](/bench/)
+* [🌿 행나들 기획실](https://haengnadeul-lab.vercel.app)
 * [🎬 행글 기획실](https://youtube-reports.vercel.app)

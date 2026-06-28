@@ -142,6 +142,7 @@ def build_sidebar(per_section, notes, prefix=""):
         lines.append("")
     # 외부 링크
     lines.append("* **🔗 연결**")
+    lines.append("  * [🌿 행나들 기획실](https://haengnadeul-lab.vercel.app)")
     lines.append("  * [🎬 행글라이터 기획실](https://youtube-reports.vercel.app)")
     lines.append("  * [🌐 스토리위너 홈피](https://storywinner.co.kr)")
     return "\n".join(lines) + "\n"
@@ -153,6 +154,7 @@ def build_navbar():
         "* [📡 레이더](/radar/)",
         "* [📋 파이프라인](/pipeline/)",
         "* [🔍 벤치](/bench/)",
+        "* [🌿 행나들 기획실](https://haengnadeul-lab.vercel.app)",
         "* [🎬 행글 기획실](https://youtube-reports.vercel.app)",
     ]
     return "\n".join(lines) + "\n"

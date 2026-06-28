@@ -30,5 +30,6 @@
   * _(아직 없음)_
 
 * **🔗 연결**
+  * [🌿 행나들 기획실](https://haengnadeul-lab.vercel.app)
   * [🎬 행글라이터 기획실](https://youtube-reports.vercel.app)
   * [🌐 스토리위너 홈피](https://storywinner.co.kr)
